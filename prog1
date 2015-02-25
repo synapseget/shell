@@ -1,0 +1,16 @@
+#!/bin/bash
+clear
+echo -n "Enter the Process Id:"
+read proid
+if[ $proid -le 1 -o $proid -ge 32768 ]
+then
+echo "Invalid process Id"
+elif
+ps -p $proid> /dev/null 2>&1
+then
+kill -9 $proid
+echo "process is killed successfully"
+else
+echo "Process is not in running state"
+fi
+

@@ -1,0 +1,8 @@
+#!/bin/bash
+clear
+echo "HaI"
+pwd
+find *.log>report.txt
+find *.txt>>report.txt
+tar -zcvf test.tar.gz ../Linux/*.txt ../Linux/*.log 
+
