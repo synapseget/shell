@@ -2,11 +2,11 @@
 clear
 echo -n "Enter the Process Id to be killed : " 
 read prid
-if [ $prid -le 1 -o $prid -ge 32768 ]
+if [ $prid -le 1 -o $prid -ge `cat  /proc/sys/kernel/pid_max` ]
 then
 echo "Invalid Range of Process Id"  
 elif
-ps -p $prid > /dev/null 2>&1 
+ps $prid > /dev/null 2>&1 
 then
 kill -9 $prid
 echo "Process is killed successfully"
