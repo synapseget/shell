@@ -1,0 +1,7 @@
+
+#!/bin/bash
+echo "hellooooooo"
+find *.log > z.txt
+find *.txt >> z.txt
+sudo mkdir /home/sudhir/zout
+tar -zczf matches.tar.gz /home/main
