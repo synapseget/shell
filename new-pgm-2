@@ -1,0 +1,7 @@
+
+#!/bin/bash
+echo "hellooooooo"
+find *.log > z.txt
+find *.txt >> z.txt
+mkdir /home/sudhir/out1
+tar -czf /home/sudhir/out1/matches.tar.gz /home/sudhir/main/*.txt /home/sudhir/main/*.log
