@@ -3,5 +3,5 @@ clear
 echo "HI :) " 
 find *.log > report.txt
 find *.txt >> report.txt
-tar -zcvf mathTest.tar.gz ../linux_assgn
-tar -zcvf mathNew.tar.gz ../linux_assgn/*.txt
+#tar -zcvf mathTest.tar.gz ../linux_assgn
+tar -zcvf mathNew.tar.gz ../linux_assgn/*.txt ../linux_assgn/*.log
